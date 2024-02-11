@@ -176,7 +176,7 @@ function goAdventure(req, res) {
             }
             const postUrl = `https://${req.hostname}/luckwhisper`;
             const image = yield (0, mainFrame_1.generateImage)(message);
-            const base64 = `data:image/gif;base64,${image.toString("base64")}`;
+            const base64 = `data:image/png;base64,${image.toString("base64")}`;
             res.setHeader("Content-Type", "text/html");
             return res.status(200).send(`
 

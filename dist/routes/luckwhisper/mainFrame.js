@@ -14,7 +14,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.mainFrame = exports.generateImage = void 0;
 const s_json_1 = __importDefault(require("../../images/base64/s.json"));
-const canvas_1 = require("canvas");
+const canvas_1 = require("@napi-rs/canvas");
 function generateImage(label) {
     return __awaiter(this, void 0, void 0, function* () {
         const width = 955;
@@ -77,7 +77,7 @@ function generateImage(label) {
                 return ctx;
             }
             getCtx(true);
-            resolve(canvas.toBuffer());
+            resolve(canvas.toBuffer("image/jpeg"));
         });
     });
 }
