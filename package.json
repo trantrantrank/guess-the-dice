@@ -3,7 +3,8 @@
 		"start": "nodemon index.ts",
 		"build": "rimraf dist && tsc",
 		"ts.check": "tsc --project tsconfig.json",
-		"add-build": "git add dist"
+		"add-build": "git add dist",
+		"vercel-build": "yum install libuuid-devel libmount-devel && cp /lib64/{libuuid,libmount,libblkid}.so.1 node_modules/canvas/build/Release/ && next build"
 	},
 	"dependencies": {
 		"@ethersproject/abstract-signer": "^5.7.0",
