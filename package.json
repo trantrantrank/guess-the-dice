@@ -10,7 +10,7 @@
 		"@farcaster/fishery": "^2.2.3",
 		"@farcaster/hub-nodejs": "^0.11.0",
 		"@planetscale/database": "^1.16.0",
-		"canvas": "^2.8.0",
+		"canvas": "2.8",
 		"cors": "^2.8.5",
 		"dotenv": "^16.4.2",
 		"ethers": "^6.11.0",
