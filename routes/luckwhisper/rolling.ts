@@ -10,6 +10,8 @@ const config = {
     password: process.env.DATABASE_PASSWORD
 }
 
+console.log(config.host, process.env.DATABASE_HOST)
+
 const conn = connect(config)
 
 const HUB_URL = process.env["HUB_URL"] || "nemes.farcaster.xyz:2283";
