@@ -1,0 +1,24 @@
+{
+	"scripts": {
+		"start": "nodemon index.ts",
+		"build": "rimraf dist && tsc",
+		"ts.check": "tsc --project tsconfig.json",
+		"add-build": "git add dist"
+	},
+	"dependencies": {
+		"@ethersproject/abstract-signer": "^5.7.0",
+		"@farcaster/fishery": "^2.2.3",
+		"@farcaster/hub-nodejs": "^0.11.0",
+		"@planetscale/database": "^1.16.0",
+		"canvas": "^2.11.2",
+		"cors": "^2.8.5",
+		"dotenv": "^16.4.2",
+		"ethers": "^6.11.0",
+		"express": "^4.18.2",
+		"nodemon": "^3.0.3",
+		"rimraf": "^5.0.5"
+	},
+	"devDependencies": {
+		"@types/node": "^20.11.17"
+	}
+}

@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "commonjs",
+        "outDir": "dist",
+        "removeComments": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+    },
+    "exclude": [
+        "css",
+    ]
+}
