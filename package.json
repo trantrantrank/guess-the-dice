@@ -4,7 +4,7 @@
 		"build": "rimraf dist && tsc",
 		"ts.check": "tsc --project tsconfig.json",
 		"add-build": "git add dist",
-		"vercel-build": "pnpm i && yum install libuuid-devel libmount-devel && cp /lib64/{libuuid,libmount,libblkid}.so.1 node_modules/canvas/build/Release/ && pnpm build"
+		"vercel-build": "yum install libuuid-devel libmount-devel && cp /lib64/{libuuid,libmount,libblkid}.so.1 node_modules/canvas/build/Release/ && pnpm build"
 	},
 	"dependencies": {
 		"@ethersproject/abstract-signer": "^5.7.0",
