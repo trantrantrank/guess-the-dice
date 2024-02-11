@@ -232,7 +232,7 @@ export async function goAdventure(req: Request, res: Response) {
         const postUrl = `https://${req.hostname}/luckwhisper`;
 
         const image = await generateImage(message);
-        const base64 = `data:image/gif;base64,${image.toString("base64")}`;
+        const base64 = `data:image/png;base64,${image.toString("base64")}`;
 
         res.setHeader("Content-Type", "text/html");
 

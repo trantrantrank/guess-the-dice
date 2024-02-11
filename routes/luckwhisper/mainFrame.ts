@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import images from "../../images/base64/s.json"
-import { createCanvas } from "canvas";
+import { createCanvas } from "@napi-rs/canvas";
 
 export async function generateImage(label: string): Promise<Buffer> {
     const width = 955;
@@ -88,7 +88,7 @@ export async function generateImage(label: string): Promise<Buffer> {
 
         getCtx(true);
 
-        resolve(canvas.toBuffer());
+        resolve(canvas.toBuffer("image/jpeg"));
     });
 }
 

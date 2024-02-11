@@ -9,6 +9,7 @@
 		"@ethersproject/abstract-signer": "^5.7.0",
 		"@farcaster/fishery": "^2.2.3",
 		"@farcaster/hub-nodejs": "^0.11.0",
+		"@napi-rs/canvas": "^0.1.45",
 		"@planetscale/database": "^1.16.0",
 		"canvas": "^2.11.2",
 		"cors": "^2.8.5",
