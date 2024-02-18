@@ -85,13 +85,13 @@ exports.generateImage = generateImage;
 function mainFrame(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
         const welcomeImage = s_json_1.default.welcome;
-        const base64 = `data:image/gif;base64,${welcomeImage}`;
+        const base64 = `data:image/avif;base64,${welcomeImage}`;
         res.setHeader("Content-Type", "text/html");
         res.status(200).send(`
     <!DOCTYPE html>
     <html>
     <head>
-    <meta property="og:title" content="Guess the Dice">
+    <meta property="og:title" content="Guess the Dice!">
     <meta property="og:image" content="${base64}">
     <meta name="fc:frame" content="vNext">
     <meta property="fc:frame:image" content="${base64}" />

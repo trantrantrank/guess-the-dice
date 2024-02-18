@@ -92,6 +92,8 @@ function goAdventure(req, res) {
             }
             let buttonIndex = (_k = (_g = (_f = (_e = validatedMessage === null || validatedMessage === void 0 ? void 0 : validatedMessage.data) === null || _e === void 0 ? void 0 : _e.frameActionBody) === null || _f === void 0 ? void 0 : _f.buttonIndex) !== null && _g !== void 0 ? _g : (_j = (_h = req === null || req === void 0 ? void 0 : req.body) === null || _h === void 0 ? void 0 : _h.untrustedData) === null || _j === void 0 ? void 0 : _j.buttonIndex) !== null && _k !== void 0 ? _k : 1;
             const fid = (_q = (_m = (_l = validatedMessage === null || validatedMessage === void 0 ? void 0 : validatedMessage.data) === null || _l === void 0 ? void 0 : _l.fid) !== null && _m !== void 0 ? _m : (_p = (_o = req === null || req === void 0 ? void 0 : req.body) === null || _o === void 0 ? void 0 : _o.untrustedData) === null || _p === void 0 ? void 0 : _p.fid) !== null && _q !== void 0 ? _q : 123;
+            console.log(validatedMessage);
+            return;
             if (fid == null || buttonIndex == null)
                 return res.status(400).send(`Missing required data`);
             const starting = !!req.query.start;
@@ -118,7 +120,7 @@ function goAdventure(req, res) {
             }
             let message = "";
             let buttons;
-            message += "You rolled a " + roll + "! Fight or flight?";
+            message += "You rolled a " + roll + "! Fight or flight?.";
             buttons = `
             <meta name="fc:frame:button:1" content="Fight 🥊">
             <meta name="fc:frame:button:2" content="Reroll 🧑‍🦽">
