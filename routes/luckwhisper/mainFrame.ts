@@ -101,7 +101,7 @@ export async function mainFrame(req: Request, res: Response) {
     <!DOCTYPE html>
     <html>
     <head>
-    <meta property="og:title" content="Guess the Dice">
+    <meta property="og:title" content="Guess the Dice!">
     <meta property="og:image" content="${base64}">
     <meta name="fc:frame" content="vNext">
     <meta property="fc:frame:image" content="${base64}" />
